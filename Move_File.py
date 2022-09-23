@@ -15,7 +15,7 @@ for file_name in list_of_files:
     print(extension)
     if extension == '':
         continue
-    if extension in ['txt', 'doc', 'docs', 'pdf']:
+    if extension in ['.txt', '.doc', '.docs', '.pdf']:
         path1 = pastaAtual + "/" + file_name
         path2 = pastaNova + "/" + "Arquivos_Imagem"
         path3 = pastaNova + "/" + "Arquivos_Imagem" + "/" + file_name
