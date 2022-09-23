@@ -2,7 +2,7 @@ from importlib.resources import path
 import os 
 import shutil
 
-pastaAtual = "C:\Users\fcmar\OneDrive\Downlods"
+pastaAtual = "C:\Users\fcmar\OneDrive\Downloads"
 pastaNova = "C:\Users\fcmar\OneDrive\Documentos\Arquivos_Documentos"
 
 list_of_files = os.listdir(pastaAtual)
@@ -15,7 +15,7 @@ for file_name in list_of_files:
     print(extension)
     if extension == '':
         continue
-    if extension in [".gif", ".png", ".jpg", ".jfif"]:
+    if extension in ['txt', 'doc', 'docs', 'pdf']:
         path1 = pastaAtual + "/" + file_name
         path2 = pastaNova + "/" + "Arquivos_Imagem"
         path3 = pastaNova + "/" + "Arquivos_Imagem" + "/" + file_name
